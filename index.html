@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>No Loops!</title>
+    <link rel="stylesheet" src="style.css">
 </head>
 <body>
     <form>
@@ -11,20 +12,6 @@
         <input type="number" id="noLoop" placeholder="Numbers only!" onchange="printNoLoop()">
     </form>
     <p id="result"></p>
-    <script>
-        function printNoLoop() {
-            
-            const noLoop = document.getElementById("noLoop").value;
-            const result = (noLoop - noLoop) + 1;
-            const printedResult = document.getElementById("result");
-
-            if (noLoop < 1) {
-                printedResult.textContent = `1 is the minimum number you may enter.`;
-            }
-            else {
-                printedResult.textContent = `${result}`
-            }
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
