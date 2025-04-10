@@ -13,7 +13,17 @@
     <p id="result"></p>
     <script>
         function printNoLoop() {
-            const input = document.getElementById("noLoop");
+            
+            const noLoop = document.getElementById("noLoop").value;
+            const result = (noLoop - noLoop) + 1;
+            const printedResult = document.getElementById("result");
+
+            if (noLoop < 1) {
+                printedResult.textContent = `1 is the minimum number you may enter.`;
+            }
+            else {
+                printedResult.textContent = `${result}`
+            }
         }
     </script>
 </body>
